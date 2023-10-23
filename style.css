@@ -1,0 +1,285 @@
+/* 
+    Style Directions
+1. Fonts / Colors
+2. General styling
+3. Nav
+4. Hero
+5. Animations
+6. Footer
+7. Media
+8. Dialog Rules!
+
+*/
+
+/* 1. Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rokkitt:ital,wght@0,300;0,400;1,900&display=swap');
+/* Colors */
+* {
+  --one: #d90404;
+  --two: #f2b077;
+  --three: #d7d7d9;
+  --four: #f2cb05;
+  --five: #d9a404;
+  --six: white;
+  --seven: black;
+  --eight: rgba(0, 0, 0, 0.911);
+}
+/* Text styling */
+
+h1 {
+  color: var(--two);
+  font-size: 7vh;
+  /* -webkit-text-stroke: 0.15vw black */
+}
+h2 {
+  color: var(--four);
+  font-size: 2.5vh;
+}
+.textNoGap {
+  font-size: 3vh;
+  margin: 0;
+}
+.navbarText {
+  font-size: 3vh;
+  font-weight: 800;
+}
+.word1,
+.word2,
+.word2animation,
+.word3,
+.word4,
+.word5 {
+  font-size: 8vw;
+  font-family: 'Rokkitt', sans-serif;
+  margin: 0rem;
+  text-transform: uppercase;
+}
+/* .word1:hover,
+.word2:hover,
+.word3:hover,
+.word4:hover,
+.word5:hover {
+  color: white;
+} */
+.word1 {
+  color: #d90404;
+}
+.word2 {
+  color: #f2b077;
+}
+.word2animation {
+  color: #f2b077;
+}
+.word3 {
+  color: #f2cb05;
+}
+.word4 {
+  color: #d7d7d9;
+}
+.word5 {
+  color: #d9a404;
+}
+.word1:hover {
+  color: #f2b077;
+}
+.word2:hover {
+  color: #d7d7d9;
+}
+.word3:hover {
+  color: #d7d7d9;
+}
+.word4:hover {
+  color: #f2cb05;
+}
+.word5:hover {
+  color: #f2cb05;
+}
+.wordGreen {
+  color: #72a603;
+  font-size: 8vw;
+  font-family: 'Rokkitt', sans-serif;
+  margin: 0rem;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+.pLine {
+  display: flex;
+  justify-content: space-between;
+}
+/* 2. General styling */
+body {
+  background-color: rgba(0, 0, 0, 0.911);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Rokkitt', sans-serif;
+}
+
+/* 3. Nav */
+.navbar_container {
+  display: flex;
+}
+/* End of Nav */
+
+/* 4. Hero Section */
+.hero {
+  display: grid;
+  place-content: center;
+  min-height: 60vh;
+  text-shadow: 5px 5px 3px #000000;
+}
+/* End of Hero */
+
+/* 5. Animations */
+.hidden {
+  opacity: 0;
+  transition: 2s;
+  transform: translateX(-100%);
+  filter: blur(10px);
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.logos {
+  display: flex;
+}
+img,
+.im2 {
+  width: 10vh;
+  height: 10vh;
+  margin-right: 50px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px;
+}
+.img2:hover {
+  animation: jump-shaking 1s;
+}
+.word2animation:hover {
+  animation: jump-shaking 1s;
+}
+
+@keyframes jump-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateY(-2px);
+  }
+  35% {
+    transform: translateY(-2px) rotate(17deg);
+  }
+  55% {
+    transform: translateY(-2px) rotate(-17deg);
+  }
+  65% {
+    transform: translateY(-2px) rotate(17deg);
+  }
+  75% {
+    transform: translateY(-2px) rotate(-17deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+/* .hidden:nth-child(2) {
+  transition-delay: 200ms;
+}
+.hidden:nth-child(3) {
+  transition-delay: 400ms;
+}
+.hidden:nth-child(4) {
+  transition-delay: 600ms;
+}
+.hidden:nth-child(5) {
+  transition-delay: 800ms;
+}
+.hidden:nth-child(6) {
+  transition-delay: 1000ms;
+} */
+/* End of Animations */
+
+/* 6. Footer */
+.footer__container {
+  flex-direction: row;
+  display: flex;
+}
+
+/* End of Footer */
+
+/* 7. Media */
+@media only screen and (max-width: 912px) {
+  .hero {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    min-height: 80vh;
+  }
+  h1 {
+    font-size: 7vh;
+  }
+  h2 {
+    font-size: 3vh;
+  }
+  .navbarText {
+    font-size: 3vh;
+    font-weight: 800;
+  }
+  /* .footer__container {
+    background-color: rgba(0, 0, 0, 0.911);
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
+  .hidden {
+    opacity: 0;
+    transition: all 2s;
+    transform: translateX(-100%);
+    filter: blur(10px);
+  }
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    margin-left: 5%;
+  }
+  img {
+    width: 10vh;
+    height: 10vh;
+    margin-right: 50px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px;
+  }
+  /* img:nth-child(2) {
+    transition-delay: 200ms;
+  }
+  img:nth-child(3) {
+    transition-delay: 400ms;
+  }
+  img:nth-child(4) {
+    transition-delay: 600ms;
+  }
+  img:nth-child(5) {
+    transition-delay: 800ms;
+  }
+  img:nth-child(6) {
+    transition-delay: 5000ms;
+  } */
+}
+
+/* 8. Dialog Rules! */
+dialog {
+  background-color: transparent;
+  border: none;
+}
+/* End of dialog */

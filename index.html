@@ -1,0 +1,137 @@
+<!-- 
+    Html directions 
+1. Head
+2. Navbar
+3.  hero
+4. Footer
+5.
+6.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 1. Head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Theo Archer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- End of Head -->
+
+  <body>
+    <!-- 2. Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="navbar_container">
+        <img onclick="d.showModal()" class="img2" src="imgs/elevator.png" alt="" />
+        <h2 class="navbarText">Take the elevator!</h2>
+        <dialog id="d"> 
+              <h2>Projects</h2>
+              <h2>Skillset</h2>
+              <h2>Contact</h2>
+              <h2>Rock bottom</h2>
+          <button class="button-modal" onclick="d.close()"></button>
+        </dialog>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- 3. hero -->
+    <section class="hidden">
+      <div class="hero">
+        <div class="pText">
+          <div class="pLine">
+            <p class="wordGreen">|</p>
+            <p class="word1">theo</p>
+            <p class="wordGreen">|</p>
+            <p class="word2">archer</p>
+            <p class="wordGreen">|</p>
+          </div>
+          <div class="pLine">
+            <p class="word3">frontend</p>
+            <p class="wordGreen">|</p>
+            <p class="word4">&</p>
+          </div>
+          <div class="pLine">
+            <p class="word5">ux</p>
+            <p class="wordGreen">|</p>
+            <p class="word1">design</p>
+            <p class="wordGreen">|</p>
+          </div class="pLine">
+          <div class="pLine">
+            <p class="wordGreen">|</p>
+            <p class="word2animation">>email</p>
+            <p class="wordGreen">|</p>
+            <p class="word3">me</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hidden">
+      <div class="hero">
+        <h1>Projects</h1>
+        <h2 class="textNoGap">Insert Projects Here</h2>
+        <h2 class="textNoGap"></h2>
+      </div>
+    </section>
+    <section class="hidden">
+      <div class="hero">
+        <h1>Current skillset</h1>
+        <h2 class="textNoGap"></h2>
+        <div class="logos">
+          <div class="logos-hidden">
+            <img src="imgs/Javascript.png" alt="" />
+          </div>
+          <div class="logos-hidden">
+            <img src="imgs/react.png" alt="" />
+          </div>
+          <div class="logos-hidden">
+            <img src="imgs/Vue.js.png" alt="" />
+          </div>
+          <div class="logos-hidden">
+            <img src="imgs/html.png" alt="" />
+          </div>
+          <div class="logos-hidden">
+            <img src="imgs/css.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hidden">
+      <div class="hero">
+        <h1>Contact me!</h1>
+        <div class="logos">
+          <div class="logos-hidden">
+            <img class="img2" src="imgs/email.png" alt="" />
+          </div>
+          <div class="logos-hidden">
+            <img class="img2" src="imgs/linkedin.png" alt="" />
+          </div>
+          <div class="logos-hidden">
+            <img class="img2" src="imgs/github.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hidden">
+      <div class="hero">
+        <h1>Have a nice day!</h1>
+        <!-- <h2 class="textNoGap">User friendly experience that makes </h2>
+        <h2 class="textNoGap">your image personal</h2> -->
+      </div>
+    </section>
+    <!-- End of Hero Section -->
+
+    <!-- 4. Footer -->
+    <div class="footer__container">
+      <img class="img2" src="imgs/elevator.png" alt="" />
+      <h2 class="navbarText">Hey, take me back up!</h2>
+    </div>
+    <!-- End of Footer -->
+    <script src="script.js"></script>
+  </body>
+</html>
