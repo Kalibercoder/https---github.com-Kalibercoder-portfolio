@@ -54,6 +54,9 @@ h2 {
   margin: 0rem;
   text-transform: uppercase;
 }
+a {
+  text-decoration: none;
+}
 /* .word1:hover,
 .word2:hover,
 .word3:hover,
@@ -120,6 +123,7 @@ body {
 .navbar_container {
   display: flex;
 }
+
 /* End of Nav */
 
 /* 4. Hero Section */
@@ -147,12 +151,11 @@ body {
   display: flex;
 }
 img,
-.im2 {
+.img2 {
   width: 10vh;
   height: 10vh;
   margin-right: 50px;
   border-radius: 25px;
-  box-shadow: 10px 10px 5px;
 }
 .img2:hover {
   animation: jump-shaking 1s;
@@ -258,7 +261,6 @@ img,
     height: 10vh;
     margin-right: 50px;
     border-radius: 25px;
-    box-shadow: 10px 10px 5px;
   }
   /* img:nth-child(2) {
     transition-delay: 200ms;
@@ -279,6 +281,27 @@ img,
 
 /* 8. Dialog Rules! */
 dialog {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(imgs/elevator.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-radius: 10px;
+  overflow: none;
+}
+dialog::backdrop {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+.button-modal {
+  width: 3vh;
+  height: 3vh;
+  position: fixed;
   background-color: transparent;
   border: none;
 }

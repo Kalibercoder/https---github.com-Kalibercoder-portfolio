@@ -25,23 +25,24 @@
 
   <body>
     <!-- 2. Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav id="frontPage" class="navbar navbar-expand-lg">
       <div class="navbar_container">
         <img onclick="d.showModal()" class="img2" src="imgs/elevator.png" alt="" />
         <h2 class="navbarText">Take the elevator!</h2>
         <dialog id="d"> 
-              <h2>Projects</h2>
-              <h2>Skillset</h2>
-              <h2>Contact</h2>
-              <h2>Rock bottom</h2>
-          <button class="button-modal" onclick="d.close()"></button>
+              <a href="#frontPage"><h2>Top floor</h2></a>
+               <a href="#projects"><h2>Projects</h2></a>
+              <a href="#skillset"><h2>Skillset</h2></a>
+              <a href="#contact"><h2>Contact</h2></a>
+              <a href="#footer"><h2>Ground Zero</h2></a>
+          <button class="button-modal" onclick="d.close()"><h2>Exit</h2></button>
         </dialog>
     </nav>
     <!-- End of Navbar -->
 
     <!-- 3. hero -->
     <section class="hidden">
-      <div class="hero">
+      <div  class="hero">
         <div class="pText">
           <div class="pLine">
             <p class="wordGreen">|</p>
@@ -63,7 +64,7 @@
           </div class="pLine">
           <div class="pLine">
             <p class="wordGreen">|</p>
-            <p class="word2animation">>email</p>
+            <a href="mailto:theo-archer-stenman@iths.se"><p class="word2animation">>email</p></a>
             <p class="wordGreen">|</p>
             <p class="word3">me</p>
           </div>
@@ -72,14 +73,14 @@
     </section>
     <section class="hidden">
       <div class="hero">
-        <h1>Projects</h1>
+        <h1 id="projects">Projects</h1>
         <h2 class="textNoGap">Insert Projects Here</h2>
         <h2 class="textNoGap"></h2>
       </div>
     </section>
     <section class="hidden">
       <div class="hero">
-        <h1>Current skillset</h1>
+        <h1 id="skillset">Current skillset</h1>
         <h2 class="textNoGap"></h2>
         <div class="logos">
           <div class="logos-hidden">
@@ -103,16 +104,16 @@
 
     <section class="hidden">
       <div class="hero">
-        <h1>Contact me!</h1>
+        <h1 id="contact">Contact me!</h1>
         <div class="logos">
           <div class="logos-hidden">
-            <img class="img2" src="imgs/email.png" alt="" />
+            <a href="mailto:theo-archer-stenman@iths.se"><img class="img2" src="imgs/email.png" alt="" /></a>
           </div>
           <div class="logos-hidden">
-            <img class="img2" src="imgs/linkedin.png" alt="" />
+           <a href="https://www.linkedin.com/in/theo-archer-stenman-b01b31294/"><img class="img2" src="imgs/linkedin.png" alt="" /></a> 
           </div>
           <div class="logos-hidden">
-            <img class="img2" src="imgs/github.png" alt="" />
+            <a href="https://github.com/Kalibercoder"><img class="img2" src="imgs/github.png" alt="" /></a>
           </div>
         </div>
       </div>
@@ -127,8 +128,8 @@
     <!-- End of Hero Section -->
 
     <!-- 4. Footer -->
-    <div class="footer__container">
-      <img class="img2" src="imgs/elevator.png" alt="" />
+    <div id="footer" class="footer__container">
+      <img class="img2" src="imgs/elevator.png" alt="" onclick="d.showModal()" />
       <h2 class="navbarText">Hey, take me back up!</h2>
     </div>
     <!-- End of Footer -->
