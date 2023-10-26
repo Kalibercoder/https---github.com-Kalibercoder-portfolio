@@ -56,6 +56,10 @@ h2 {
 }
 a {
   text-decoration: none;
+  color: #f2b077;
+}
+a:hover {
+  color: #d7d7d9;
 }
 /* .word1:hover,
 .word2:hover,
@@ -105,6 +109,14 @@ a {
   text-transform: uppercase;
   text-shadow: none;
 }
+.wordGreen2 {
+  color: #72a603;
+  font-size: 12vw;
+  font-family: 'Rokkitt', sans-serif;
+  margin: 0rem;
+  text-transform: uppercase;
+  text-shadow: none;
+}
 .pLine {
   display: flex;
   justify-content: space-between;
@@ -130,6 +142,8 @@ body {
 .hero {
   display: grid;
   place-content: center;
+  text-align: center;
+  margin-top: 10vh;
   min-height: 60vh;
   text-shadow: 5px 5px 3px #000000;
 }
@@ -148,16 +162,25 @@ body {
   transform: translateX(0);
 }
 .logos {
-  display: flex;
+  display: grid;
+  place-content: center;
+  grid-auto-flow: column;
 }
 img,
 .img2 {
   width: 10vh;
   height: 10vh;
-  margin-right: 50px;
+  margin: 25px;
   border-radius: 25px;
 }
-.img2:hover {
+.img3 {
+  width: 10vh;
+  height: 10vh;
+  margin: 0;
+  border-radius: 25px;
+}
+.img2,
+.img3:hover {
   animation: jump-shaking 1s;
 }
 .word2animation:hover {

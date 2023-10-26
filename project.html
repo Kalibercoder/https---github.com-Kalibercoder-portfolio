@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 1. Head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Theo Archer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- End of Head -->
+
+  <body>
+    <!-- 2. Navbar -->
+    <nav id="frontPage" class="navbar navbar-expand-lg">
+      <div class="navbar_container">
+        <img onclick="d.showModal()" class="img3" src="imgs/elevator.png" alt="" />
+        <h2 class="navbarText">Take the elevator!</h2>
+        <dialog id="d"> 
+              <a href="index.html#frontPage"><h2>Top floor</h2></a>
+               <a href="index.html#projects"><h2>Projects</h2></a>
+              <a href="index.html#skillset"><h2>Skillset</h2></a>
+              <a href="index.html#contact"><h2>Contact</h2></a>
+              <a href="index.html#footer"><h2>Ground Zero</h2></a>
+          <button class="button-modal" onclick="d.close()"><h2>Exit</h2></button>
+        </dialog>
+    </nav>
+    <div id="footer" class="footer__container">
+        <img class="img3" src="imgs/elevator.png" alt="" onclick="d.showModal()" />
+        <h2 class="navbarText">Hey, take me back up!</h2>
+      </div>
+      <!-- End of Footer -->
+      <script src="script.js"></script>
+    </body>
+  </html>
