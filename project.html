@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- 1. Head -->
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Theo Archer</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <!-- End of Head -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Snake</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: black;
+      }
 
+      #game-board {
+        background-color: #ccc;
+        width: 100vmin;
+        height: 100vmin;
+        display: grid;
+        grid-template-rows: repeat(21, 1fr);
+        grid-template-columns: repeat(21, 1fr);
+      }
+
+      .snake {
+        background-color: hsl(123, 82%, 34%);
+        border: 0.25vmin solid black;
+      }
+
+      .food {
+        background-color: red;
+        border: 0.25vmin solid black;
+      }
+    </style>
+    <script src="game.js" defer type="module"></script>
+  </head>
   <body>
-    <!-- 2. Navbar -->
-    <nav id="frontPage" class="navbar navbar-expand-lg">
-      <div class="navbar_container">
-        <img onclick="d.showModal()" class="img3" src="imgs/elevator.png" alt="" />
-        <h2 class="navbarText">Take the elevator!</h2>
-        <dialog id="d"> 
-              <a href="index.html#frontPage"><h2>Top floor</h2></a>
-               <a href="index.html#projects"><h2>Projects</h2></a>
-              <a href="index.html#skillset"><h2>Skillset</h2></a>
-              <a href="index.html#contact"><h2>Contact</h2></a>
-              <a href="index.html#footer"><h2>Ground Zero</h2></a>
-          <button class="button-modal" onclick="d.close()"><h2>Exit</h2></button>
-        </dialog>
-    </nav>
-    <div id="footer" class="footer__container">
-        <img class="img3" src="imgs/elevator.png" alt="" onclick="d.showModal()" />
-        <h2 class="navbarText">Hey, take me back up!</h2>
-      </div>
-      <!-- End of Footer -->
-      <script src="script.js"></script>
-    </body>
-  </html>
+    <div id="game-board"></div>
+  </body>
+</html>

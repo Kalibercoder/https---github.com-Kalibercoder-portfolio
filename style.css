@@ -8,7 +8,7 @@
 6. Footer
 7. Media
 8. Dialog Rules!
-
+9. Form
 */
 
 /* 1. Fonts */
@@ -329,3 +329,37 @@ dialog::backdrop {
   border: none;
 }
 /* End of dialog */
+/* 9. Form */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  color: var(--five);
+  font-size: 4vh;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+input[type='submit'] {
+  background-color: #72a603;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: var(--five);
+}
+/* End of form */
