@@ -144,7 +144,7 @@ body {
   place-content: center;
   text-align: center;
   margin-top: 10vh;
-  min-height: 60vh;
+  height: 60vh;
   text-shadow: 5px 5px 3px #000000;
 }
 /* End of Hero */
@@ -236,12 +236,13 @@ img,
 /* End of Footer */
 
 /* 7. Media */
-@media only screen and (max-width: 912px) {
+@media only screen and (max-width: 414px) {
   .hero {
     display: grid;
     place-content: center;
     text-align: center;
-    min-height: 80vh;
+    min-height: 60vh;
+    min-width: none;
   }
   h1 {
     font-size: 7vh;
@@ -277,13 +278,13 @@ img,
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     gap: 5px;
-    margin-left: 5%;
   }
   img {
     width: 10vh;
     height: 10vh;
-    margin-right: 50px;
-    border-radius: 25px;
+  }
+  .wordgreen {
+    display: none;
   }
   /* img:nth-child(2) {
     transition-delay: 200ms;
