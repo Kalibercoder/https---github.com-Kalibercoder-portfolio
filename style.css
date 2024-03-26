@@ -61,13 +61,7 @@ a {
 a:hover {
   color: #d7d7d9;
 }
-/* .word1:hover,
-.word2:hover,
-.word3:hover,
-.word4:hover,
-.word5:hover {
-  color: white;
-} */
+
 .word1 {
   color: #d90404;
 }
@@ -210,22 +204,6 @@ img,
     transform: translateY(0) rotate(0);
   }
 }
-/* .hidden:nth-child(2) {
-  transition-delay: 200ms;
-}
-.hidden:nth-child(3) {
-  transition-delay: 400ms;
-}
-.hidden:nth-child(4) {
-  transition-delay: 600ms;
-}
-.hidden:nth-child(5) {
-  transition-delay: 800ms;
-}
-.hidden:nth-child(6) {
-  transition-delay: 1000ms;
-} */
-/* End of Animations */
 
 /* 6. Footer */
 .footer__container {
@@ -236,13 +214,12 @@ img,
 /* End of Footer */
 
 /* 7. Media */
-@media only screen and (max-width: 414px) {
+@media only screen and (min-width: 390px) {
   .hero {
     display: grid;
     place-content: center;
     text-align: center;
-    min-height: 60vh;
-    min-width: none;
+    min-height: 40vh;
   }
   h1 {
     font-size: 7vh;
@@ -250,18 +227,12 @@ img,
   h2 {
     font-size: 3vh;
   }
+
   .navbarText {
     font-size: 3vh;
     font-weight: 800;
   }
-  /* .footer__container {
-    background-color: rgba(0, 0, 0, 0.911);
-    padding: 2vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  } */
+
   .hidden {
     opacity: 0;
     transition: all 2s;
@@ -286,21 +257,6 @@ img,
   .wordgreen {
     display: none;
   }
-  /* img:nth-child(2) {
-    transition-delay: 200ms;
-  }
-  img:nth-child(3) {
-    transition-delay: 400ms;
-  }
-  img:nth-child(4) {
-    transition-delay: 600ms;
-  }
-  img:nth-child(5) {
-    transition-delay: 800ms;
-  }
-  img:nth-child(6) {
-    transition-delay: 5000ms;
-  } */
 }
 
 /* 8. Dialog Rules! */
