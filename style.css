@@ -42,7 +42,7 @@ h2 {
 .word3,
 .word4,
 .word5 {
-  font-size: 14vw;
+  font-size: 11vw;
   font-family: 'Rokkitt', sans-serif;
   margin: 0rem;
   text-transform: uppercase;
@@ -100,7 +100,7 @@ a:hover {
 
 .wordGreen {
   color: #72a603;
-  font-size: 14vw;
+  font-size: 11vw;
   font-family: 'Rokkitt', sans-serif;
   margin: 0rem;
   text-transform: uppercase;
@@ -135,6 +135,7 @@ body {
   place-content: center;
   text-align: center;
   margin-top: 10vh;
+  margin-bottom: 15vh;
   height: 60vh;
   text-shadow: 5px 5px 3px #000000;
 }
@@ -156,6 +157,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 img,
@@ -212,7 +214,7 @@ img,
 /* End of Footer */
 
 /* 7. Media */
-@media only screen and (min-width: 390px) {
+@media only screen and (max-width: 390px) {
   .hero {
     display: grid;
     place-content: center;
@@ -225,7 +227,17 @@ img,
   h2 {
     font-size: 3vh;
   }
-
+  .word1,
+  .word2,
+  .word2animation,
+  .word3,
+  .word4,
+  .word5 {
+    font-size: 14vw;
+  }
+  .wordGreen {
+    font-size: 14vw;
+  }
   .navbarText {
     font-size: 3vh;
     font-weight: 800;
@@ -242,18 +254,10 @@ img,
     filter: blur(0);
     transform: translateX(0);
   }
-  .logos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    gap: 5px;
-  }
+
   img {
     width: 10vh;
     height: 10vh;
-  }
-  .wordgreen {
-    display: none;
   }
 }
 
