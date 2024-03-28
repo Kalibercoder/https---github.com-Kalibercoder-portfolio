@@ -214,7 +214,7 @@ img,
 /* End of Footer */
 
 /* 7. Media */
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 389px) {
   .hero {
     display: grid;
     place-content: center;
@@ -259,6 +259,9 @@ img,
     width: 10vh;
     height: 10vh;
   }
+  dialog {
+    height: 40vh;
+  }
 }
 
 /* 8. Dialog Rules! */
@@ -273,6 +276,7 @@ dialog {
   border: none;
   border-radius: 10px;
   overflow: none;
+  height: 33vh;
 }
 dialog::backdrop {
   background: linear-gradient(
@@ -281,9 +285,9 @@ dialog::backdrop {
   );
 }
 .button-modal {
-  width: 3vh;
+  width: 3vw;
   height: 3vh;
-  position: fixed;
+  position: absolute;
   background-color: transparent;
   border: none;
 }
