@@ -35,21 +35,14 @@ h2 {
   color: var(--four);
   font-size: 2.5vh;
 }
-.textNoGap {
-  font-size: 3vh;
-  margin: 0;
-}
-.navbarText {
-  font-size: 3vh;
-  font-weight: 800;
-}
+
 .word1,
 .word2,
 .word2animation,
 .word3,
 .word4,
 .word5 {
-  font-size: 8vw;
+  font-size: 14vw;
   font-family: 'Rokkitt', sans-serif;
   margin: 0rem;
   text-transform: uppercase;
@@ -95,22 +88,26 @@ a:hover {
 .word5:hover {
   color: #f2cb05;
 }
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 .wordGreen {
   color: #72a603;
-  font-size: 8vw;
+  font-size: 14vw;
   font-family: 'Rokkitt', sans-serif;
   margin: 0rem;
   text-transform: uppercase;
   text-shadow: none;
+  animation: blink 2s step-start 0s infinite;
 }
-.wordGreen2 {
-  color: #72a603;
-  font-size: 12vw;
-  font-family: 'Rokkitt', sans-serif;
-  margin: 0rem;
-  text-transform: uppercase;
-  text-shadow: none;
-}
+
 .pLine {
   display: flex;
   justify-content: space-between;
@@ -156,10 +153,11 @@ body {
   transform: translateX(0);
 }
 .logos {
-  display: grid;
-  place-content: center;
-  grid-auto-flow: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 img,
 .img2 {
   width: 10vh;
@@ -286,37 +284,18 @@ dialog::backdrop {
   border: none;
 }
 /* End of dialog */
-/* 9. Form */
-form {
-  max-width: 400px;
-  margin: 0 auto;
-  color: var(--five);
-  font-size: 4vh;
+
+/* 9. Contact */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-label,
-input,
-textarea {
-  display: block;
-  margin-bottom: 10px;
+.email {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
 }
-
-input[type='text'],
-input[type='email'],
-textarea {
-  width: 100%;
-  padding: 10px;
-}
-
-input[type='submit'] {
-  background-color: #72a603;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-input[type='submit']:hover {
-  background-color: var(--five);
-}
-/* End of form */
+/* End of Contact */
